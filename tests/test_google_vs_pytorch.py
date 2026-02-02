@@ -9,8 +9,8 @@ from scipy.spatial.transform import Rotation as R
 from solvers.pytorch_solver import PyTorchSolver
 from solvers.google_solver import GoogleEKF
 from solvers.base_solver import OrientationTrajectory
-from data_loader import SensorData
-from noise_db import NoiseParams
+from core.data_loader import SensorData
+from core.noise_db import NoiseParams
 
 class TestSolverComparison(unittest.TestCase):
     def test_compare_google_vs_pytorch(self):

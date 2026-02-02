@@ -22,8 +22,8 @@ import datetime
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from data_loader import DataLoader
-from noise_db import noise_db
+from core.data_loader import DataLoader
+from core.noise_db import noise_db
 from solvers.pytorch_solver import PyTorchSolver
 from solvers.google_solver import GoogleEKF
 from solvers.base_solver import OrientationTrajectory

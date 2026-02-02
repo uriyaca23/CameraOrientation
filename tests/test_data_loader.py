@@ -5,7 +5,7 @@ import numpy as np
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from data_loader import DataLoader
+from core.data_loader import DataLoader
 
 class TestDataLoader(unittest.TestCase):
     def test_load_sample_data(self):

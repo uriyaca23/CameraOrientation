@@ -1,8 +1,8 @@
 import numpy as np
 import gtsam
 from .base_solver import BaseSolver, OrientationTrajectory
-from data_loader import SensorData
-from noise_db import NoiseParams
+from core.data_loader import SensorData
+from core.noise_db import NoiseParams
 
 class GTSAMSolver(BaseSolver):
     def solve(self, data: SensorData, noise_params: NoiseParams) -> OrientationTrajectory:

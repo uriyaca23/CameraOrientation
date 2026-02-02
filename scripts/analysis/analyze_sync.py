@@ -1,7 +1,10 @@
 import cv2
 import numpy as np
 import argparse
-from data_loader import DataLoader
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from core.data_loader import DataLoader
 import matplotlib.pyplot as plt
 
 def find_video_start_event(video_path, threshold=10):

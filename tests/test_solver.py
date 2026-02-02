@@ -10,8 +10,8 @@ from scipy.spatial.transform import Rotation as R
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from solvers.pytorch_solver import PyTorchSolver
-from data_loader import SensorData
-from noise_db import NoiseParams
+from core.data_loader import SensorData
+from core.noise_db import NoiseParams
 
 class TestPyTorchSolver(unittest.TestCase):
     def test_synthetic_trajectory(self):

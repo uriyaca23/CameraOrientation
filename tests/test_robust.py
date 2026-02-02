@@ -7,8 +7,8 @@ sys.path.append(r"c:\Users\uriya\PycharmProjects\CameraOrientation")
 
 from visualizer import get_phone_mesh
 from solvers.pytorch_solver import PyTorchSolver
-from data_loader import SensorData
-from noise_db import noise_db
+from core.data_loader import SensorData
+from core.noise_db import noise_db
 
 class TestRobust(unittest.TestCase):
     

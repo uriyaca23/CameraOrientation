@@ -8,9 +8,9 @@ import sys
 # Ensure parent directory is in path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from data_loader import DataLoader
+from core.data_loader import DataLoader
 from solvers.pytorch_solver import PyTorchSolver
-from noise_db import NoiseParams
+from core.noise_db import NoiseParams
 
 def quat_error_degrees(q1, q2):
     """Computes angular distance between two quaternion arrays in degrees."""

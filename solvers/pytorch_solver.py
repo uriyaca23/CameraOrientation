@@ -5,8 +5,8 @@ import torch.optim as optim
 import numpy as np
 import tqdm
 from .base_solver import BaseSolver, OrientationTrajectory
-from data_loader import SensorData
-from noise_db import NoiseParams
+from core.data_loader import SensorData
+from core.noise_db import NoiseParams
 
 class PyTorchSolver(BaseSolver):
     def solve(self, data: SensorData, noise_params: NoiseParams) -> OrientationTrajectory:

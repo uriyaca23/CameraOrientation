@@ -1,9 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from data_loader import DataLoader
-from noise_db import noise_db
-from solvers.pytorch_solver import PyTorchSolver
 import argparse
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from core.data_loader import DataLoader
+from core.noise_db import noise_db
+from solvers.pytorch_solver import PyTorchSolver
 
 # Try importing GTSAMSolver
 try:

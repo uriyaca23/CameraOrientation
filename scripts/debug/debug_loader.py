@@ -1,4 +1,9 @@
-from data_loader import DataLoader
+import sys
+import os
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from core.data_loader import DataLoader
 import os
 
 log_path = "data/google_pixel_10/indoor/exp1_uriya_apartment/sensorLog_fA4bFhD_ZGc_20260201T191641.txt"

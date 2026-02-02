@@ -3,3 +3,11 @@ __pycache__/
 *.mp4
 /data/
 /assets/video_hevc_backup.mp4
+/debug_output/
+/sync_debug.png
+/solver_comparison.png
+/solver_analysis.png
+/solver_error.png
+/analysis_accel.png
+/analysis_gyro.png
+/sync_analysis.png

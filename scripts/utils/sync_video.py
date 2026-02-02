@@ -5,8 +5,10 @@ import matplotlib.pyplot as plt
 from scipy.signal import correlate, correlation_lags
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from data_loader import DataLoader
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from core.data_loader import DataLoader
 import argparse
 
 def get_optical_flow_magnitude(video_path, max_frames=900):

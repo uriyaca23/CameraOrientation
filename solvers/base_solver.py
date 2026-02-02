@@ -2,8 +2,8 @@
 from abc import ABC, abstractmethod
 from typing import NamedTuple
 import numpy as np
-from data_loader import SensorData
-from noise_db import NoiseParams
+from core.data_loader import SensorData
+from core.noise_db import NoiseParams
 
 class OrientationTrajectory(NamedTuple):
     timestamps: np.ndarray # T
