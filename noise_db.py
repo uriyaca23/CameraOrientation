@@ -14,8 +14,12 @@ class NoiseParams:
     mag_noise_sigma: float    # std dev, microTesla or normalized units
     
     # Bias stability (random walk) - optional for simple models but good for factors
-    accel_bias_sigma: float = 1e-4
-    gyro_bias_sigma: float = 1e-5
+    gyro_noise_sigma: float   # std dev, rad/s
+    mag_noise_sigma: float    # std dev, microTesla or normalized units
+    
+    # Bias Prior (deviation from 0)
+    accel_bias_sigma: float = 1e-1 # Loose prior
+    gyro_bias_sigma: float = 1e-2
 
 class NoiseDatabase:
     """
@@ -29,8 +33,8 @@ class NoiseDatabase:
             "indoor":  NoiseParams(accel_noise_sigma=0.02, gyro_noise_sigma=0.005, mag_noise_sigma=50.0) # High uncertainty for indoor mag
         },
         "pixel_10": { # Example high quality phone
-             "outdoor": NoiseParams(accel_noise_sigma=0.008, gyro_noise_sigma=0.002, mag_noise_sigma=0.3),
-             "indoor":  NoiseParams(accel_noise_sigma=0.008, gyro_noise_sigma=0.002, mag_noise_sigma=20.0)
+             "outdoor": NoiseParams(accel_noise_sigma=0.008, gyro_noise_sigma=0.002, mag_noise_sigma=0.3, accel_bias_sigma=0.05, gyro_bias_sigma=0.005),
+             "indoor":  NoiseParams(accel_noise_sigma=0.008, gyro_noise_sigma=0.002, mag_noise_sigma=20.0, accel_bias_sigma=0.05, gyro_bias_sigma=0.005)
         }
     }
 

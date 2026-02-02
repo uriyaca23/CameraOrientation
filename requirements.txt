@@ -1,7 +1,10 @@
-dash>=3.4.0
-plotly>=6.5.2
-pandas>=3.0.0
-scipy>=1.17.0
-numpy>=2.4.2
-torch>=2.10.0
-opencv-python>=4.13.0.90
+dash
+plotly
+pandas
+scipy
+numpy
+torch
+opencv-python
+tqdm
+matplotlib
+gtsam

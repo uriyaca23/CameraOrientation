@@ -1,0 +1,5 @@
+MAE: Roll=6.57, Pitch=4.92, Yaw=15.21
+RMSE: Roll=11.67, Pitch=6.56, Yaw=23.68
+Max: Roll=151.09, Pitch=33.67, Yaw=170.15
+Initial Error: Roll=-0.73, Pitch=4.44, Yaw=-2.53
+Drift: Roll=5.94, Pitch=1.05, Yaw=0.35

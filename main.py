@@ -34,7 +34,7 @@ def main():
     print("Starting Visualization...")
     # Pass original video path for reference, but Visualizer currently expects 'assets/video.mp4' 
     # (We assume it's copied there by the setup script)
-    viz = Visualizer(trajectory, args.video)
+    viz = Visualizer(trajectory, args.video, gt_quats=data.orientation)
     viz.run()
 
 if __name__ == "__main__":
